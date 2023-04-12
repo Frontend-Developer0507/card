@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xusanov Sunnatullo</title>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./fontawesome/css/all.min.css">
+</head>
+<body>
+  <button class="toggls">
+    <i class="fa-solid fa-moon toggle-moon"></i>
+    <i class="fa-solid fa-sun toggle-sun"></i>
+  </button>
+<div class="contener">
+<div class="card">
+<div class="contents"> 
+<div class="imgBx"><img src="./img/user.jpg"></div>
+<div class="contentBx">
+    <h3>01</h3>
+    <h2>Xusanov Sunnatullo</h2>                 
+</div>
+</div>
+<ul class="icons">
+<li style="--i:1">
+<a target="_blank" href="https://t.me/Sunnatullo">
+  <i class="fa-brands fa-telegram"></i>
+</a>
+</li>
+<li style="--i:2">
+<a target="_blank" href="https://instagram.com/usa_sun__?igshid=YmMyMTA2M2Y=">
+  <i class="fa-brands fa-instagram"></i>
+</a>
+</li>
+<li style="--i:3">
+<a target="_blank" href="https://youtube.com/@love-is-cinema">
+  <i class="fa-brands fa-youtube"></i>
+</a>                        
+</li>
+</ul>
+</div>
+</div>
+
+<script>
+let body = document.querySelector('body');
+let toggls = document.querySelector('.toggls');
+
+let moon = document.querySelector('.toggle-moon');
+let sun = document.querySelector('.toggle-sun');
+
+toggls.addEventListener("click",function(){
+  toggls.classList.toggle('active');
+  body.classList.toggle('dark')
+});
+
+</script>
+
+<script src="./js/vanilla-tilt.min.js"></script>
+<script>
+  VanillaTilt.init(document.querySelector(".card"), {
+		max: 15,
+		speed: 200,
+    glare: true,
+    "max-glare": 0.5,   
+	});
+</script>
+</body>
+</html>
